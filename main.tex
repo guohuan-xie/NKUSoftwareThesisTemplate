@@ -115,8 +115,12 @@
 \tableofcontents
 \begin{spacing}{1.5}
 \include{manual}
+\clearpage
+\def\thepage{\arabic{page}}
 \include{references}
 \end{spacing}
+\clearpage
+\def\thepage{\arabic{page}}
 \include{acknowledgements}
 
 \end{document}

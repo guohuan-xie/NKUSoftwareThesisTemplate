@@ -354,8 +354,8 @@
 \if@twoside
   \def\ps@centerheadings{
     \let\@mkboth\markboth
-    \def\@oddfoot{\hb@xt@\textwidth{\hfil\raisebox{8.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
-    \def\@evenfoot{\hb@xt@\textwidth{\hfil\raisebox{8.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
+    \def\@oddfoot{\hb@xt@\textwidth{\hfil\raisebox{4.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
+    \def\@evenfoot{\hb@xt@\textwidth{\hfil\raisebox{4.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
     \def\setevenhead{\def\@evenhead{\protect\rule[-5pt]{\textwidth}{0.5pt}\hspace{-\textwidth}
      \headingfonts\hfil  \leftmark\hfil}}
     \sethead{\protect\rule[-5pt]{\textwidth}{0.5pt}\hspace{-\textwidth}
@@ -366,13 +366,13 @@
 
     \def\ps@plain{
       \let\@mkboth\markboth
-      \def\@oddfoot{\hb@xt@\textwidth{\hfil\raisebox{8.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
-      \def\@evenfoot{\hb@xt@\textwidth{\hfil\raisebox{8.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
+      \def\@oddfoot{\hb@xt@\textwidth{\hfil\raisebox{4.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
+      \def\@evenfoot{\hb@xt@\textwidth{\hfil\raisebox{4.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
       \sethead{}}
 \else
   \def\ps@centerheadings{
     \let\@mkboth\markboth
-    \def\@oddfoot{\hb@xt@\textwidth{\hfil\raisebox{8.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
+    \def\@oddfoot{\hb@xt@\textwidth{\hfil\raisebox{4.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
     \sethead{\protect\rule[-5pt]{\textwidth}{0.5pt}\hspace{-\textwidth}
     \headingfonts \hfil\rightmark\hfil  }
      \def\chaptermark##1{
@@ -388,8 +388,8 @@
 
   \def\ps@plain{
      \let\@mkboth\markboth
-     \def\@oddfoot{\hb@xt@\textwidth{\hfil\raisebox{8.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
-     \def\@evenfoot{\hb@xt@\textwidth{\hfil\raisebox{8.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
+     \def\@oddfoot{\hb@xt@\textwidth{\hfil\raisebox{4.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
+     \def\@evenfoot{\hb@xt@\textwidth{\hfil\raisebox{4.5mm}[0pt][0pt]{\zihaoxiaowu\thepage}\hfil}}
      \def\@evenhead{}
      \sethead{}}
 \fi
@@ -721,6 +721,7 @@ Path=fonts/
 
 \def\zhixie{
   \clearpage
+  \def\thepage{\arabic{page}}
   \vspace*{0pt}
   \centerline{\zihaosi\rmfamily\bfseries 致\quad 谢}
   \phantomsection

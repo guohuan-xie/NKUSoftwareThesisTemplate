@@ -32,6 +32,8 @@ latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
 build/main.pdf
 ```
 
+本项目当前不依赖 `Makefile`，直接使用 `latexmk` 或 VS Code 的 LaTeX Workshop 即可完成编译。
+
 ## 使用建议
 
 - 修改论文题目信息时，优先编辑 `main.tex` 中的 `\NKTsetup{...}` 部分。
